@@ -1,0 +1,80 @@
+html {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+  overflow-x: clip;
+}
+body {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(topo-map.png);
+}
+a, .header {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(178, 170, 248);
+  font-size: 175%;
+  font-weight: bold;
+  text-decoration: none;
+  transition:  600ms ease-in-out;
+}
+ul {
+  list-style-type: none;
+  padding-left: 1em;
+  margin-left: 0;
+}
+#links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  padding: 1em;
+  position: relative;
+  right: 60px;
+  top: 105px;
+}
+#image {
+  scale: .75;
+}
+img {
+  border-radius: 60px;
+}
+li {
+  padding-top: 7px;
+}
+#greeting {
+  font-size: 2.2em;
+  font-weight: 800;
+  grid-column: 1/-1;
+  text-align: center;
+  display: grid;
+  position:relative;
+  right: 60px;
+  bottom: 45px;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(178, 170, 248);
+}
+#datetime {
+  font-size: 1.6em;
+  font-weight: 800;
+  grid-column: 1/-10;
+  text-align: center;
+  display: grid;
+  position:relative;
+  right: 60px;
+  bottom: 38px;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(178, 170, 248);
+}
+#day {
+  font-size: 1.9em;
+  font-weight: 800;
+  grid-column: 1/-10;
+  text-align: center;
+  display: grid;
+  position:relative;
+  right: 60px;
+  bottom:25px;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(178, 170, 248);
+}
