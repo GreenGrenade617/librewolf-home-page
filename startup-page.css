@@ -78,3 +78,24 @@ li {
   font-family: 'Courier New', Courier, monospace;
   color: rgb(178, 170, 248);
 }
+.black-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  clip-path: circle(100%);
+  animation: shrinkCircle 1.4s ease-out forwards;
+  z-index: 10; /* Keeps it on top */
+}
+
+/* Shrinking animation to reveal content */
+@keyframes shrinkCircle {
+  0% {
+    clip-path: circle(100%);
+  }
+  100% {
+    clip-path: circle(0%);
+  }
+}
